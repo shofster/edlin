@@ -126,14 +126,11 @@ func setDefaultPaths(prefs fyne.Preferences) {
 func selectTabItem(item *container.TabItem) {
 	if tx, ok := tabMap[item.Text]; ok {
 		tabix = tx
-		//fmt.Println("select: ", tx, "tabix is", tabix)
 	}
 }
 
 func removeTabItem(item *container.TabItem) {
-	fmt.Println("removeTabItem: ", item.Text, len(tabs), len(tabMap))
 	if tx, ok := tabMap[item.Text]; ok {
-		fmt.Println("remove: ", tx, "tabix is", tabix, "tabs", len(tabs))
 		if len(tabs) < 2 {
 			tabix = 0
 			tabs = nil

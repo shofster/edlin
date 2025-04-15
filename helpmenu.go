@@ -96,7 +96,7 @@ Ctrl + F or Ctrl + R enters Search/Replace Mode.
 Ctrl + Home: Position the list at line 0.
 Ctrl + End:  Position the list at the last line.
 Ctrl + Down: Position the list 10 rows down. (PageDown)
-Ctrl + up:   Position the list 10 rows up.   (PageUp)
+Ctrl + Up:   Position the list 10 rows up.   (PageUp)
      Down:   Position the list 1 row down.   (Down Arrow)
        Up:   Position the list 1 row up.     (Up Arrow)
 `
