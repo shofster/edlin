@@ -218,19 +218,19 @@ func (l *TextList) TypedShortcut(s fyne.Shortcut) {
 			l.markEndRow(l.rowId)
 		}
 
-	case "Cut": // Ctrl+X
+	case "Cut", "CustomDesktop:Control+X": // Ctrl+X
 		if l.mode == modeEdit {
 			str := collectRows(l.deleteMarkedRows())
 			cb := l.window.Clipboard()
 			cb.SetContent(str)
 		}
-	case "Copy": // Ctrl+C
+	case "Copy", "CustomDesktop:Control+C": // Ctrl+C
 		if l.mode == modeEdit {
 			str := collectRows(l.getMarkedRows())
 			cb := l.window.Clipboard()
 			cb.SetContent(str)
 		}
-	case "Paste": // Ctrl+V
+	case "Paste", "CustomDesktop:Control+V": // Ctrl+V
 		if l.mode == modeEdit {
 			cb := l.window.Clipboard()
 			str := cb.Content()
